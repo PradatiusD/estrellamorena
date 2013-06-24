@@ -1,0 +1,211 @@
+//These are a mix of one's Ive found in CSS tricks, CodeSchool as well as some I've found useful for cross-browser css.
+//I've alphabetized and stretched the mixins horizontally to allow users to be able to quickly see all the mixin titles.
+
+
+
+@mixin border-radius ($rad) {-moz-border-radius: ($rad);-webkit-border-radius: ($rad); border-radius: ($rad);-khtml-border-radius:($rad);}
+
+@mixin center-align ($width) {width: ($width); margin: 0 auto;}
+
+@mixin helvetica {font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 300;}
+
+@mixin hover-opacity ($speed, $endopacity){
+  @include transition ($speed);
+  &:hover {
+    @include opacity ($endopacity);
+  }
+}
+
+@mixin opacity ($o) {filter: alpha(opacity=($o*100)); -moz-opacity: ($o);-khtml-opacity: ($o);opacity: ($o);}
+  
+@mixin top-shadow {
+//this is meant to be placed under the body.  Found from CSS tricks.
+  &:before{content: "";position: fixed;top: -10px;left: 0;width: 100%;height: 10px;-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);-moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8); box-shadow: 0px 0px 10px rgba(0,0,0,.8); z-index: 100;}
+    }  
+
+@mixin transition ($s) {-moz-transition:($s); -webkit-transition:($s);-o-transition:($s);transition:($s);}  
+
+@mixin tucked-corners {background: #f6f6f6;height: 700px;margin: 50px auto;max-width: 600px; position: relative; width: 80%;-webkit-box-shadow: 0 1px 7px hsla(0,0%,0%,.2); -moz-box-shadow: 0 1px 7px hsla(0,0%,0%,.2); box-shadow: 0 1px 7px hsla(0,0%,0%,.2);
+  &:after, &:before {background: #e6e6e6;content: '';height: 50px;position: absolute;top: -25px;width: 100px;-webkit-box-shadow: 0 5px 10px -7px hsla(0,0%,0%,.5);-moz-box-shadow: 0 5px 10px -7px hsla(0,0%,0%,.5);box-shadow: 0 5px 10px -7px hsla(0,0%,0%,.5);}
+  &:after {left: -50px;-webkit-transform: rotate(-45deg);-moz-transform: rotate(-45deg);-ms-transform: rotate(-45deg);-o-transform: rotate(-45deg);transform: rotate(-45deg);}
+  &:before {right: -50px;-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);-ms-transform: rotate(45deg);-o-transform: rotate(45deg);transform: rotate(45deg);}}
+
+$vinotinto:#5C0A17;
+
+
+//Cross page elements
+html, body {
+  height: 100%; }
+
+h2, h3 {
+  color: #666666;
+  border-bottom: solid 1px #5C0A17;
+  font-weight: normal;
+  text-align: center;
+  line-height: 2em; }
+
+h3 {
+  text-align: left;
+  font-style: oblique; }
+
+p {
+  text-align: justify; }
+
+.spacer {
+  height: 2px;
+  background: #ceb60a;
+  margin: 0px;
+  padding: 0px; }
+
+.top-spacing {
+  margin-top: 1em; }
+
+#nav ul {
+  list-style: none;
+  margin-top: 37px;
+  position: relative;
+  left: 8%; }
+  @media screen and (max-width: 893px) {
+    #nav ul {
+      left: 0%; } }
+#nav li {
+  display: inline;
+  padding-right: 2em;
+  color: #fdfcd4;
+  text-decoration: none; }
+  #nav li:hover {
+    color: white;
+    text-decoration: none; }
+#nav a {
+  text-decoration: none; }
+  #nav a:hover {
+    color: white;
+    text-decoration: none; }
+
+#top {
+  height: 7em; }
+  #top h1 {
+    color: white;
+    position: relative;
+    top: -0.5em;
+    font-size: 2.5em;
+    line-height: 0em;
+    text-align: center; }
+  #top h2 {
+    color: red;
+    position: relative;
+    top: 0em;
+    line-height: 0em;
+    text-align: center; }
+  #top #logo {
+    height: 44px; }
+
+    #top #logo img {
+      // position: relative;
+      // bottom: 40px; 
+    }
+
+  #top #language h6 {
+    text-align: right;
+    color: #c9c9c9; }
+  #top #language a {
+    color: #c9c9c9; }
+    #top #language a:hover {
+      color: white;
+      text-decoration: none; }
+  @media screen and (max-width: 893px) {
+    #top {
+      height: inherit; }
+      #top #logo img {
+        bottom: 0px; } }
+
+.banner-bottom-bg {
+  background: #f3f3f3; }
+  .banner-bottom-bg p {
+    text-align: center;
+    color: #4e4e4e;
+    font-size: 1.5em;
+    padding: 1em;
+    line-height: 0em;
+    margin-bottom: 0px;
+    font-family: 'Julius Sans One', sans-serif; }
+    @media screen and (max-width: 1186px) {
+      .banner-bottom-bg p {
+        line-height: 1em; } }
+
+.header-bg {
+  background: #240409; }
+
+body.home {
+  background: #240409;
+  height: 100%; }
+  body.home .carousel {
+    margin-bottom: 0em; }
+  body.home .carousel-caption {
+    display: none; }
+  body.home .carousel-control {
+    top: 48%; }
+  body.home .carousel-inner > .item > img {
+    width: 100%; }
+  body.home .bottom-bg {
+    background: #240409;
+    color: #e9e9e9;
+    height: 38%; }
+  body.home .vertical .carousel-inner {
+    height: 100%; }
+  body.home .carousel.vertical .item {
+    -webkit-transition: 0.6s ease-in-out top;
+    -moz-transition: 0.6s ease-in-out top;
+    -ms-transition: 0.6s ease-in-out top;
+    -o-transition: 0.6s ease-in-out top;
+    transition: 0.6s ease-in-out top; }
+  body.home .carousel.vertical .active {
+    top: 0; }
+  body.home .carousel.vertical .next {
+    top: 100%; }
+  body.home .carousel.vertical .prev {
+    top: -100%; }
+  body.home .carousel.vertical .next.left,
+  body.home .carousel.vertical .prev.right {
+    top: 0; }
+  body.home .carousel.vertical .active.left {
+    top: -100%; }
+  body.home .carousel.vertical .active.right {
+    top: 100%; }
+  body.home .carousel.vertical .item {
+    left: 0px; }
+  body.home .carousel-control {
+    display: none; }
+
+.gallery img {
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+  .gallery img:hover {
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8; }
+
+img.estrella {
+  margin-top: 10px;
+  box-shadow: 0px 0px 11px black; }
+
+img.padding {
+  margin: 27px 10px; @include hover-opacity (.5s,.80);}
+
+.leftNav ul {
+  list-style-type: none; }
+.leftNav li {
+  padding: .5em;
+  font-size: 2em;
+  text-align: center; }
+.leftNav a {
+  text-decoration: none;
+  color: gray; }
+.leftNav a:hover {
+  color: #5c0a17; }
+
+#professional {
+  color: #5c0a17; }
