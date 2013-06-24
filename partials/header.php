@@ -11,8 +11,6 @@
         <meta name="keywords" content="Flamenco, Miami, Dance Studio">
         <meta name="viewport" content="width=device-width">
         <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
         <link rel="stylesheet" href="css/main.css">
         <!--[if lt IE 9]>
             <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
@@ -36,7 +34,7 @@
             <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
         <![endif]-->
 <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script> ';
-        } ?> 
+        } ?>
     </head>
     
     <body <?php echo 'class="' . $page_class . '"'; ?>>
@@ -52,16 +50,32 @@
                     <div class="span4" id="logo">
                         <a href="index.php"><img src="img/Estrella-logo.png"/></a>
                     </div>
-                    <div class="span6 offset2" id="nav">
-                        <ul>
-                            <a href="Estrella-bio.php"><li>BIO</li></a>
-                            <a href="Studio.php"><li>STUDIO</li></a>
-                            <a href="Gallery.php"><li>GALLERY</li></a>
-                            <a href="Company.php"><li>COMPANY</li></a>
-                            <a href="Events.php"><li>EVENTS</li></a>
-                            <a href="Contact-Estrella.php"><li>CONTACT</li></a>
+                    <div class="span6 offset2">
+                        <ul class="nav nav-pills">
+                            <li><a href="Estrella-bio.php">BIO</a></li>  
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" id="drop4" role="button" data-toggle="dropdown">Studio</a>
+                                <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop4">
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="Studio.php#Classes">Classes</a></li>
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="Studio.php#Workshops">Workshops</a></li>
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="Studio.php#StudentShows">Student Shows</a></li>
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="Studio.php#Fees">Fees and Registration</a></li>
+                                </ul>
+                              </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" id="drop5" role="button" data-toggle="dropdown" href="#">Gallery</a>
+                                <ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="drop5">
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="Gallery.php#Professional">Professional</a></li>
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="Gallery.php#Personal">Personal</a></li>
+                                  <li role="presentation"><a role="menuitem" tabindex="-1" href="Gallery.php#StudentShows">Student Shows</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Company.php">COMPANY</a></li>
+                            <li><a href="Events.php">EVENTS</a></li>
+                            <li><a href="Contact-Estrella.php">CONTACT</a></li>
                         </ul>                        
                     </div>
                 </nav>
-            </div>            
+            </div>
+            
         </header>

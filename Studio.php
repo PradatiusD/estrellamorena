@@ -102,14 +102,30 @@ margin-bottom: 2em;margin-right:2em" align="right"/></div>
                       </section>
                 </div>     
         </div>
-<script>    
-  $('.row .span4.leftNav ul li').click(function(){
-    $('.row .span4.leftNav ul li a').css('color','gray')
-    $('.rightNav section').hide();
-    var text = $(this).index();
-    $(this).children().css('color','#5C0A17');
-    $('.rightNav section').eq(text).fadeToggle();
-  })
+<script>
+jQuery(document).ready(function($){
+    $('.row .span4.leftNav ul li').click(function(){
+      $('.row .span4.leftNav ul li a').css('color','gray')
+      $('.rightNav section').hide();
+      var text = $(this).index();
+      $(this).children().css('color','#5C0A17');
+      $('.rightNav section').eq(text).fadeToggle();
+    })
+        // Check for which panel they chose on navigation
+      var galleryURLs = ['#Classes','#Workshops','#StudentShows', 'Fees'];
+      var baseURL = 'http://estrellamorena.com/Studio.php';
+
+      for (var i = 0; i < galleryURLs.length; i++) {
+          var fullURL = baseURL+galleryURLs[i];
+          if (document.URL===fullURL) {
+              // Set galelry to default
+              $('.leftNav ul li a').css('color','gray');
+              $('.leftNav ul li').eq(i).find('a').css('color','#5C0A17');
+              $('.span8 div').hide().eq(i).fadeToggle();
+          }
+      };
+})    
+
 </script>                        
       
     </body>

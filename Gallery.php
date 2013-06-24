@@ -59,9 +59,7 @@
         </div>
             
       <script type="text/javascript">
-    $(document).ready(
-
-        function() {
+    $(document).ready(function() {
             $("a[rel^='prettyPhoto']").prettyPhoto({
                 theme: 'dark_square', /* light_rounded / dark_rounded / light_square / dark_square / facebook */
                 show_title: false, /* true/false */
@@ -71,33 +69,26 @@
                 counter_separator_label: '/', /* The separator for the gallery counter 1 "of" 2 */
                 modal: false /* If set to true, only the close button will close the window */
             });
-            $('#professional').click(
-                    function(){
-                        $(this).css('color','#5C0A17');
-                        $('#personal, #students').css('color','gray');
-                        $('#2, #3').fadeOut('fast', function(){
-                            $('#1').delay(200).fadeIn('fast')
-                        })
-                    }
-                )
-            $('#personal').click(
-                    function(){
-                        $(this).css('color','#5C0A17');
-                        $('#professional, #students').css('color','gray');
-                        $('#1, #3').fadeOut('fast', function(){
-                            $('#2').delay(200).fadeIn('fast')
-                        })
-                    }
-                )
-            $('#students').click(
-                    function(){
-                        $(this).css('color','#5C0A17');
-                        $('#personal, #professional').css('color','gray');
-                        $('#1, #2').fadeOut('fast', function(){
-                            $('#3').delay(200).fadeIn('fast')
-                        })
-                    }
-                )            
+            // Function to do left right toggling of gallery with tabs
+            $('.leftNav ul li').click(function(){
+                $('.leftNav ul li a').css('color','gray');
+                var sideIndex = $(this).index()
+                $(this).find('a').css('color','#5C0A17');
+                $('.span8 div').hide().eq(sideIndex).fadeToggle();
+            })
+            // Check for which panel they chose on navigation
+            var galleryURLs = ['#Professional','#Personal','#StudentShows'];
+            var baseURL = 'http://estrellamorena.com/Gallery.php';
+
+            for (var i = 0; i < galleryURLs.length; i++) {
+                var fullURL = baseURL+galleryURLs[i];
+                if (document.URL===fullURL) {
+                    // Set galelry to default
+                    $('.leftNav ul li a').css('color','gray');
+                    $('.leftNav ul li').eq(i).find('a').css('color','#5C0A17');
+                    $('.span8 div').hide().eq(i).fadeToggle();
+                }
+            };
         }
         )
       </script>

@@ -11,7 +11,7 @@
             </div>
             <div class="row">
                 <div class="span12">
-                    <p style="font-size: 1.3em;line-height: 1.1em;text-align: left;margin-bottom: 1em;margin-top: 1em;">The vision of Fuego Flamenco is to continue to present modern influences without compromising traditions of pure flamenco, giving opportunities to new talents, both local and international.  Fuego Flamenco has performed at Casa Panza, New World Symphony with Carmen Linares, Boston Flamenco Ballet with Jose Greco, Bailes Ferrer in Ft. Lauderdale and at the Hall Center with other ballets.</p>
+                    <p class="lead">The vision of Fuego Flamenco is to continue to present modern influences without compromising traditions of pure flamenco, giving opportunities to new talents, both local and international.  Fuego Flamenco has performed at Casa Panza, New World Symphony with Carmen Linares, Boston Flamenco Ballet with Jose Greco, Bailes Ferrer in Ft. Lauderdale and at the Hall Center with other ballets.</p>
                 </div>
             </div>             <br>
             <div class="row">
