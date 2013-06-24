@@ -1,50 +1,7 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-        <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
-        <link rel="stylesheet" href="css/main.css">
-
-        <!--[if lt IE 9]>
-            <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
-        <![endif]-->
-    </head>
-    <body class="bio">
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
-        <header class="header-bg">
-            <div class="container" id="top">
-<!--                 <section class="row" id="language">
-                    <h6><a href="#">English</a>/<a href="#">Español</a></h6>
-                </section>   -->              
-                <nav class="row">
-                    <div class="span4" id="logo">
-                        <a href="index.html"><img src="img/Estrella-logo.png"/></a>
-                    </div>
-                    <div class="span6 offset2" id="nav">
-                        <ul>
-                            <a href="Estrella-bio.html"><li>BIO</li></a>
-                            <a href="Studio.html"><li>STUDIO</li></a>
-                            <a href="Gallery.html"><li>GALLERY</li></a>
-                            <a href="Company.html"><li>COMPANY</li></a>
-                            <a href="#"><li>EVENTS</li></a>
-                            <a href="contact.html"><li>CONTACT</li></a>
-                        </ul>                        
-                    </div>
-
-                </nav>
-            </div>            
-        </header>
+<?php 
+    $page_class = 'bio';
+    include('partials/header.php');  
+?>
         <div class="spacer"></div>
         <div class="container">
             <section class="row top-spacing">
