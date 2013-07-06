@@ -121,9 +121,15 @@ jQuery(document).ready(function($){
               // Set galelry to default
               $('.leftNav ul li a').css('color','gray');
               $('.leftNav ul li').eq(i).find('a').css('color','#5C0A17');
-              $('.span8 div').hide().eq(i).fadeToggle();
+              $('.span8 section').hide().eq(i).fadeToggle();
           }
       };
+      $('#menu1 li').click(function(){
+        var getIndex = $(this).index();
+        $('.leftNav ul li a').css('color','gray');
+        $('.leftNav ul li').eq(getIndex).find('a').css('color','#5C0A17');
+        $('.span8 section').hide().eq(getIndex).fadeToggle();
+      })
 })    
 
 </script>                        

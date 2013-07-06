@@ -83,14 +83,20 @@
             for (var i = 0; i < galleryURLs.length; i++) {
                 var fullURL = baseURL+galleryURLs[i];
                 if (document.URL===fullURL) {
-                    // Set galelry to default
+                    // Set gallery to default
                     $('.leftNav ul li a').css('color','gray');
                     $('.leftNav ul li').eq(i).find('a').css('color','#5C0A17');
                     $('.span8 div').hide().eq(i).fadeToggle();
                 }
             };
-        }
-        )
+
+            $('#menu2 li').click(function(){
+                var getIndex = $(this).index();
+                $('.leftNav ul li a').css('color','gray');
+                $('.leftNav ul li').eq(getIndex).find('a').css('color','#5C0A17');
+                $('.span8 div').hide().eq(getIndex).fadeToggle();
+            })
+        })
       </script>
     </body>
 </html>
