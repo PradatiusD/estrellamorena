@@ -7,10 +7,10 @@
         <div id="myCarousel" class="carousel slide vertical hidden-phone">
                 <div class="carousel-inner">
                   <div class="item active">
-                    <img src="img/Estrella-slide3.png" alt="">
+                    <img src="img/Estrella-slide3.jpg" alt="">
                   </div>
                   <div class="item">                    
-                    <img src="img/Estrella-slide2.png" alt="">
+                    <img src="img/Estrella-slide2.jpg" alt="">
                   </div>
                 </div>
                 <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>

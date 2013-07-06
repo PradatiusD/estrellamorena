@@ -17,7 +17,7 @@
                         <p>The art of Flamenco is strongly rooted in its community, strengthening its cultural identity and continuing to be passed down from one generation to the next.  On November 16, 2010, The United Nations Educational, Scientific and Cultural Organization (UNESCO) recognized flamenco as a World Heritage Treasure.  Estrella’s objective is to teach the art of flamenco and the various forms of dance from Spain to anyone who has a desire to learn, whether as a hobby or to train on a professional level; her goal is to continue creating new values without compromising the pure art form of flamenco to anyone who desires to dance well!</p>
                     </div>
                         <div class="span6">
-                            <img src="img/Estrella-epic-dance.png" alt="Estrella Morena" class="estrella">
+                            <img src="img/Estrella-epic-dance.jpg" alt="Estrella Morena" class="estrella">
                         </div>
             </section>                
         </div>

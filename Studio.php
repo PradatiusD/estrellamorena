@@ -111,7 +111,7 @@ jQuery(document).ready(function($){
       $(this).children().css('color','#5C0A17');
       $('.rightNav section').eq(text).fadeToggle();
     })
-        // Check for which panel they chose on navigation
+    // Check for which panel they chose on navigation
       var galleryURLs = ['#Classes','#Workshops','#StudentShows', 'Fees'];
       var baseURL = 'http://estrellamorena.com/Studio.php';
 
