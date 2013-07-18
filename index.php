@@ -75,7 +75,10 @@
     var mySwiper = new Swiper('.swiper-container',{
     pagination: '.pagination',
     paginationClickable: true,
-    mode: 'vertical'
+    mode: 'vertical',
+    speed:1000,
+    autoplay: 4000,
+    autoResize:true
     })
 </script>
 <script>
