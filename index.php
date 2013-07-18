@@ -92,5 +92,6 @@
         })
     })
 </script>
-    </body>
-</html>
+<?php 
+include('partials/footer.php');  
+?>

@@ -55,6 +55,7 @@
                     </div>
                     <div class="span6 offset2">
                         <ul class="nav nav-pills">
+                            <li class="PDmobile"><a href="Javascript:void(0)">Menu</a></li>
                             <li><a href="Estrella-bio.php">BIO</a></li>  
                             <li class="dropdown">
                                 <a class="dropdown-toggle" id="drop4" role="button" data-toggle="dropdown">Studio</a>

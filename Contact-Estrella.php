@@ -91,7 +91,7 @@
 
     google.maps.event.addDomListener(window, 'load', initialize);
     </script>       
-    </body>
-</html>
-
+<?php 
+include('partials/footer.php');  
+?>
 

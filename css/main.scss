@@ -108,7 +108,39 @@ p {
     .dropdown-menu li > a:hover {
         background: #E9F1AD;
     }
-    @media screen and (max-width:786px) {
+    .nav {
+        margin-top: 1.8em;
+        > li > a {
+        color:$yellow-white;
+        text-transform: uppercase;
+        font-weight:300;
+            &:hover {
+            background:none !important;
+            } 
+        }
+        .dropdown-toggle {
+            color:$yellow-white;
+            .caret {
+                border-top-color: $yellow-white;
+                border-bottom-color: $yellow-white;
+            }
+        } 
+        li.dropdown ul li a {
+            color:$vinotinto;
+        }
+        .open .dropdown-toggle {
+            background-color:$yellow-white !important;
+            color:$vinotinto;
+            .caret {
+                border-top-color:$vinotinto !important;
+                border-bottom-color:$vinotinto !important;
+            }
+        }
+        .PDmobile {
+            display: none;
+        }
+    }
+    @media screen and (min-width:481px) and (max-width:786px) {
         #logo {
             text-align: center;
         }
@@ -123,6 +155,27 @@ p {
             }
         }
     }
+    @media screen and (max-width:481px) {
+        .nav {
+            height:2em;
+            > li {
+                display: block;
+                float: none;
+            }
+            li.dropdownTEMP {
+                ul li a {
+                    color:$yellow-white;
+                }
+            }
+            .PDmobile {
+                display: block;
+                a {
+                    font-weight:bold;
+                }
+            }
+            overflow: hidden;
+        }
+    }    
 }
 
 @media screen and (max-width: 893px) {
@@ -155,62 +208,6 @@ line-height: 1em;
     background: #240409;
 }
 
-body.home {
-    background: #240409;
-    height: 100%;
-    .carousel {
-        margin-bottom: 0em;
-    }
-    .carousel-caption {
-        display: none;
-    }
-    .carousel-control {
-        top: 48%;
-    }
-    .carousel-inner > .item > img {
-        width: 100%;
-    }
-    .bottom-bg {
-        background: #240409;
-        color: #e9e9e9;
-        height: 38%;
-    }
-    .vertical .carousel-inner {
-        height: 100%;
-    }
-    .carousel.vertical .item {
-        -webkit-transition: 0.6s ease-in-out top;
-        -moz-transition: 0.6s ease-in-out top;
-        -ms-transition: 0.6s ease-in-out top;
-        -o-transition: 0.6s ease-in-out top;
-        transition: 0.6s ease-in-out top;
-    }
-    .carousel.vertical .active {
-        top: 0;
-    }
-    .carousel.vertical .next {
-        top: 100%;
-    }
-    .carousel.vertical .prev {
-        top: -100%;
-    }
-    .carousel.vertical .next.left,
-    .carousel.vertical .prev.right {
-        top: 0;
-    }
-    .carousel.vertical .active.left {
-        top: -100%;
-    }
-    .carousel.vertical .active.right {
-        top: 100%;
-    }
-    .carousel.vertical .item {
-        left: 0px;
-    }
-    .carousel-control {
-        display: none;
-    }
-}
 
 .gallery img {
     -moz-transition: 0.5s;
@@ -254,35 +251,7 @@ box-shadow: 0px 0px 11px black;
     }
 }
 
-.nav {
-> li > a {
-color:$yellow-white;
-text-transform: uppercase;
-font-weight:300;
-&:hover {
-background:none !important;
-} 
-}
-.dropdown-toggle {
-color:$yellow-white;
-.caret {
-border-top-color: $yellow-white;
-border-bottom-color: $yellow-white;
-}
-} 
-li.dropdown ul li a {
-color:$vinotinto;
-}
-.open .dropdown-toggle {
-background-color:$yellow-white !important;
-color:$vinotinto;
-.caret {
-border-top-color:$vinotinto !important;
-border-bottom-color:$vinotinto !important;
-}
-}
-margin-top: 1.8em;
-}
+
 
 ul.nav li.dropdown:hover > ul.dropdown-menu{
 display: block !important;    
