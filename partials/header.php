@@ -16,7 +16,10 @@
             <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
         <![endif]-->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-        <?php if ($pretty_Photo=true) {
+        <?php if ($swiper==true) {
+            echo '<link rel="stylesheet" href="css/idangerous.swiper.css" type="text/css" media="screen" charset="utf-8" />';
+        } ?>
+        <?php if ($pretty_Photo==true) {
             echo '<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
          <!-- This accounts for gallery tweaks -->
          <style type="text/css">
