@@ -13,6 +13,8 @@
   height: 400px;
   color: #fff;
   text-align: center;
+  overflow: hidden;
+  position: relative;
 }
 
 .pagination {
@@ -78,7 +80,6 @@
     mode: 'vertical',
     speed:1000,
     autoplay: 4000,
-    autoResize:true
     })
 </script>
 <script>
@@ -87,6 +88,7 @@
             var bodyWidth = $('body').width();
             $('.swiper-container').css('height',bodyWidth*0.32)            
         }
+        fixSwiper();
         $(window).resize(function(){
             fixSwiper();
         })

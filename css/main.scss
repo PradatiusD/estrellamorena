@@ -44,6 +44,7 @@ $yellow-white: #fdfcd4;
 //Cross page elements
 html, body {
     height: 100%;
+    @include top-shadow;
 }
 
 h2, h3 {
@@ -249,6 +250,10 @@ box-shadow: 0px 0px 11px black;
             margin:0;
         }
     }
+}
+
+body.home {
+    background:#240409;
 }
 
 

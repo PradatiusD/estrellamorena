@@ -5430,6 +5430,17 @@ a.label:hover, a.badge:hover {
     overflow: visible !important; } }
 html, body {
   height: 100%; }
+  html:before, body:before {
+    content: "";
+    position: fixed;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    z-index: 100; }
 
 h2, h3 {
   color: #666666;
@@ -5580,6 +5591,9 @@ img.estrella {
 @media screen and (max-width: 786px) {
   .leftNav ul {
     margin: 0; } }
+
+body.home {
+  background: #240409; }
 
 ul.nav li.dropdown:hover > ul.dropdown-menu {
   display: block !important; }
