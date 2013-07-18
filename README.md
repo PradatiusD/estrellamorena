@@ -1,4 +1,4 @@
 estrellamorena
 ==============
 
-Website for Flamenco artist using HTML5 Boilerplate and SASS.
+Website for local Flamenco artist using HTML5 Boilerplate, SASS, and Google Maps API.
