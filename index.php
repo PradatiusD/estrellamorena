@@ -8,35 +8,35 @@
         <div class="spacer"></div>
 
 <style>
-.swiper-container {
-  width: 100%;
-  height: 400px;
-  color: #fff;
-  text-align: center;
-  overflow: hidden;
-  position: relative;
-}
+  .swiper-container {
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
 
-.pagination {
-  position: absolute;
-  z-index: 20;
-  left: 10px;
-  top: 10px;
-}
-.swiper-pagination-switch {
-  display: block;
-  width: 8px;
-  height: 8px;
-  border-radius: 8px;
-  background: #555;
-  margin: 0 0px 5px;
-  opacity: 0.8;
-  border: 1px solid #fff;
-  cursor: pointer;
-}
-.swiper-active-switch {
-  background: #fff;
-}
+  .pagination {
+    position: absolute;
+    z-index: 20;
+    left: 10px;
+    top: 10px;
+  }
+  .swiper-pagination-switch {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    background: #555;
+    margin: 0 0px 5px;
+    opacity: 0.8;
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+  .swiper-active-switch {
+    background: #fff;
+  }
 </style>
 
     <section class="swiper-container">
@@ -68,6 +68,11 @@
                       <a href="#"><img src="img/Vimeo.png" class="padding"></a>
                     </div>
                 </section>
+                <section class="row">
+                  <div class="span4 offset8">
+                    <p class="PD-stamp">Site by <a href="http://PradaDesigners.com" target="_blank">Prada Designers</a></p>
+                  </div>
+                </section>
             </div>
         </footer>
 
@@ -84,13 +89,32 @@
 </script>
 <script>
     jQuery(document).ready(function($){
+        function ChangeNavClasses () {
+            // Fixes an issue on homepage responsiveness
+            var bodyWidth = $('body').width();
+            if (bodyWidth > 908 && bodyWidth < 1214) {
+                $('nav .span6.offset2').removeClass('span6 offset2').addClass('span7 offset1');
+            } else {
+                $('nav .span7.offset1').removeClass('span7 offset1').addClass('span6 offset2')
+            }
+        }
+        
+
         function fixSwiper () {
             var bodyWidth = $('body').width();
-            $('.swiper-container').css('height',bodyWidth*0.32)            
+            var SwiperHeight = bodyWidth*0.32;
+            if (SwiperHeight>400) {
+              var SwiperHeight = 400;
+            }
+            $('.swiper-container').css('height',SwiperHeight)            
         }
+
+        // Call on DOM load and window resize
         fixSwiper();
+        ChangeNavClasses();
         $(window).resize(function(){
             fixSwiper();
+            ChangeNavClasses();
         })
     })
 </script>

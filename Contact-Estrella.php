@@ -65,7 +65,7 @@
     var contentString = '<div id="content">'+
           '<div id="siteNotice">'+
           '</div>'+
-          '<h2 id="firstHeading" class="firstHeading">Estrella Morena Flamenco</h2>'+
+          '<h4 id="firstHeading" class="firstHeading">Estrella Morena Flamenco</h4>'+
           '<div id="bodyContent">'+
           '<p>The studio is located at <b>8410 W Flagler St Miami, FL 33144 Suite 115b</b>. ' +
           '<p>To view a larger map, <a href="http://goo.gl/maps/2HsCo">click here.</a>'+'</p>'+

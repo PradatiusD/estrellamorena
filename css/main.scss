@@ -44,7 +44,6 @@ $yellow-white: #fdfcd4;
 //Cross page elements
 html, body {
     height: 100%;
-    @include top-shadow;
 }
 
 h2, h3 {
@@ -210,17 +209,8 @@ line-height: 1em;
 }
 
 
-.gallery img {
-    -moz-transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-    &:hover {
-       filter: alpha(opacity=80);
-        -moz-opacity: 0.8;
-        -khtml-opacity: 0.8;
-        opacity: 0.8; 
-    }
+.gallery {
+    margin: 2px 0;
 }
 
 img.estrella {
@@ -277,5 +267,31 @@ img.padding {
 margin: 27px 10px; @include hover-opacity (.5s,.80);}
 
 
-td {padding-right:2.5em; padding-bottom:.7em}
-table {display:inline-block;}
+td {
+    padding-right:2.5em;
+    padding-bottom:.7em;
+}
+table {
+    display:inline-block;
+}
+
+.PD-stamp {
+    color:gray;
+    font-weight: 200;
+    float: right;
+    margin-right:20%;
+    a {
+        color:$yellow-white;
+        font-weight:bold;
+        @include transition (0.5s);
+        &:hover {
+            color:#E97F1D;
+            text-decoration:none;
+        }
+    }
+    @media screen and (max-width:480px) {
+        text-align: center;
+        float: none;
+        margin-right:0;
+    }
+}

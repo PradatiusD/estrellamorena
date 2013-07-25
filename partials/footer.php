@@ -25,13 +25,12 @@
     			$('.nav').animate({'height':32},1000);
     			mobileCounter--;
     		}
-    		
-    		
-    	});
-    	$(window).resize(function(){
-    		fixNav();
-    	})
+        });
 
+        $(window).resize(function(){
+            fixNav();
+            
+        })
 
 	})
 </script>
