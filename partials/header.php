@@ -29,7 +29,6 @@
          }
          ul.gallery li {
             display: inline-block;
-            margin: 0;
          }
 
          </style>

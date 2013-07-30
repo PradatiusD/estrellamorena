@@ -20,7 +20,7 @@
                         <section>
                         <h3>CLASS SCHEDULE</h3>
                         <div style="margin-bottom:3em">
-                    <table>
+                    <table class="table table-striped table-bordered table-hover">
                            <tr>
                                <td><strong>Advanced</strong></td>
                                <td>Mondays</td>
@@ -67,15 +67,7 @@
                                <td></td>
                            </tr>
                                                   </table>
-                            <img src="img/studioestrella1.jpg" style="height: auto;
-max-width: 100%;
-vertical-align: middle;
-border: 0;
--ms-interpolation-mode: bicubic;
-display: inline-block;
-vertical-align: top;
-border: 2px solid #800080;
-margin-bottom: 2em;margin-right:2em" align="right"/></div>                         
+                            <img src="img/studioestrella1.jpg" class="studio"/></div>                         
                            <br>
                            <p>Estrella’s objective is for her students to learn traditional dance forms as they are taught in Spain.  Her extensive education and training in flamenco has exposed her to the best teaching and choreography.  Laying the foundation for each level, the beginning student will learn proper heel-toe technique, flat foot technique, proper body placement to strengthen the body as a whole, movement of the hands and arms during dance, “palmas” (rhythmic hand-clapping), as well as introduction to different “compas” (beat, rhythm, melody and harmony).</p>
                            <ul>

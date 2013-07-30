@@ -5522,7 +5522,8 @@ p {
         display: block;
         float: none; }
       #top .nav li.dropdownTEMP ul li a {
-        color: #fdfcd4; }
+        color: #fdfcd4;
+        font-weight: 200; }
       #top .nav .PDmobile {
         display: block; }
         #top .nav .PDmobile a {
@@ -5550,7 +5551,7 @@ p {
 .header-bg {
   background: #240409; }
 
-.gallery {
+.gallery li {
   margin: 2px 0; }
 
 img.estrella {
@@ -5562,7 +5563,8 @@ img.estrella {
 .leftNav li {
   padding: .5em;
   font-size: 2em;
-  text-align: center; }
+  text-align: center;
+  line-height: 1em; }
 .leftNav a {
   text-decoration: none;
   color: gray;
@@ -5598,13 +5600,6 @@ img.padding {
     -khtml-opacity: 0.8;
     opacity: 0.8; }
 
-td {
-  padding-right: 2.5em;
-  padding-bottom: .7em; }
-
-table {
-  display: inline-block; }
-
 .PD-stamp {
   color: gray;
   font-weight: 200;
@@ -5625,3 +5620,18 @@ table {
       text-align: center;
       float: none;
       margin-right: 0; } }
+
+img.studio {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+  display: inline-block;
+  vertical-align: top;
+  border: 2px solid #800080;
+  margin: 2em;
+  float: right; }
+
+.iedisplay {
+  display: none; }

@@ -63,7 +63,7 @@
                         </div>
             </section>                
         </div>
-    <script src="js/jQuery.BlackAndWhite.js"></script>
+    <script src="js/bw.js"></script>
     <script>
     $(window).load(function(){
         $('.bwWrapper').BlackAndWhite({

@@ -54,7 +54,7 @@
         <div class="banner-bottom-bg">
             <div class="container">
                 <section class="span12">
-                    <p style="font-weight:bold">Flamenco DANCE STUDIO  | 8410 W. Flagler St. Miami, FL 33144 #115-B | (305) 554-7282</p>
+                    <p style="font-weight:bold">Flamenco DANCE STUDIO<span class="hidden-phone"> | </span><br class="visible-phone">8410 W. Flagler St. Miami, FL 33144 #115-B<span class="hidden-phone"> | </span><br class="visible-phone">(305) 554-7282</p>
                 </section>
             </div>
         </div>
